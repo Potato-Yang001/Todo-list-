@@ -29,9 +29,9 @@ function App() {
         <div>
           <ul>
             {todos.map((newTodo, index) => (
-              <li key={index}>{newTodo}</li>
+              <li key={index}>{newTodo}
+                <Button variant="danger" className='ms-3' onClick={() => deleteTodo(index)}>Delete</Button></li>
             ))}
-            <Button variant="danger" className='ms-3' onClick={deleteTodo}>Delete</Button>
           </ul>
         </div>
       </div>
